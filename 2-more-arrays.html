@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Arrays</title>
+    <p><b>More Arrays</b></p>
+    <br />
+    <p><b>Task 1</b></p>
+    <p id="demo"></p>
+    <p><b>Task 2</b></p>
+    <p id="demo2"></p>
+    <p><b>Task 3</b></p>
+    <p id="demo3"></p>
+    <p><b>Task 4</b></p>
+    <p id="demo4"></p>
+    <p><b>Task 5</b></p>
+    <p id="demo5"></p>
+    <p><b>Task 6</b></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <script>
+      //Task 1
+      const months = [
+        "Jon",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Jun",
+        "May",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+      ];
+      months[0] = "Jan";
+      document.getElementById("demo").innerHTML = months;
+      console.log(months);
+
+      //Task 2
+      months[4] = "May";
+      months[5] = "June";
+      document.getElementById("demo2").innerHTML = months;
+      console.log(months);
+
+      //Task 3
+      months.length;
+      document.getElementById("demo3").innerHTML = months.length;
+      console.log(months.length);
+
+      //Task 4
+      months.push = ",December";
+      document.getElementById("demo4").innerHTML = months;
+      console.log(months);
+
+      //Task 5
+      months.pop;
+      document.getElementById("demo5").innerHTML = months.pop();
+      console.log(months);
+
+      //Task 6
+      document.getElementById("demo6").innerHTML = months;
+      let removed = months.splice(6, 1);
+      document.getElementById("demo6").innerHTML =
+        "Removed Items:<br> " + removed;
+      document.getElementById("demo7").innerHTML = months;
+      console.log(months.removed);
+      console.log(months);
+    </script>
+  </head>
+  <body></body>
+</html>
+
+<p>Open the console in the browser to see the output of this script.</p>

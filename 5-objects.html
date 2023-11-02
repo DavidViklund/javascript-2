@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+    <p><b>Objects</b></p>
+    <br />
+    <p><b>Task 1</b></p>
+    <p id="demo"></p>
+    <br />
+    <p><b>Task 2</b></p>
+    <p id="demo2"></p>
+
+    <p><b>Task 3</b></p>
+    <p id="demo3"></p>
+  </head>
+  <body>
+    <script>
+      //Task 1
+      const person = {
+        studentAt: "Chas",
+        name: "David Viklund",
+        age: "43",
+      };
+
+      console.log(person);
+      document.getElementById("demo").innerHTML =
+        person.name +
+        " is a student at " +
+        person.studentAt +
+        " and is " +
+        person.age +
+        " years old ";
+
+      //Task 2
+      person.favoriteFoods = " Sushi";
+      console.log(person);
+      document.getElementById("demo2").innerHTML =
+        "and loves" + person.favoriteFoods + ".";
+
+      //Task 3
+
+      console.log(person.name);
+      console.log(person.age);
+
+      // Task 4
+      person.eyeColor = " Blue";
+      console.log(person);
+      document.getElementById("demo3").innerHTML =
+        "Eyecolor:" + person.eyeColor + ".";
+
+      // Task 5
+      const dogs = {
+        labrador: {
+          adult: {
+            name: "Marley",
+          },
+          puppy: {
+            name: "Buster",
+          },
+        },
+      };
+      console.log(dogs.labrador.puppy);
+    </script>
+  </body>
+</html>
+
+<p>Open the console in the browser to see the output of this script.</p>

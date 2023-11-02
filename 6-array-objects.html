@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array - Objects</title>
+  </head>
+  <body>
+    <p><b>Array - Objects</b></p>
+    <br />
+    <p><b>Task 1</b></p>
+    <p>See console for solution</p>
+    <br />
+    <p><b>Task 2</b></p>
+    <p>See console for solution</p>
+
+    <script>
+      // Task 1
+      const products = [
+        { name: "Camera", brand: "Canon", model: "EOS 70D" },
+        { name: "Camera", brand: "Nikon", model: "D3400" },
+        { name: "Camera", brand: "GoPro", model: "Hero 4" },
+        { name: "Drone", brand: "DJI", model: "Phantom" },
+        { name: "Drone", brand: "GoPro", model: "Karma" },
+      ];
+      products.forEach((product) => {
+        console.log(`Name: ${product.name}, Brand: ${product.brand}`);
+      });
+
+      // Task 2
+      const models = products.map((product) => product.model);
+      console.log(models);
+    </script>
+  </body>
+</html>

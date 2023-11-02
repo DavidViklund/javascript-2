@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maps</title>
+  </head>
+  <body>
+    <p><b>Maps</b></p>
+    <br />
+    <p><b>Task 1</b></p>
+    <p> forEach doesent work/log</p>
+    <p><b>Task 2</b></p>
+    <p>If you remove return, you'll get Undifined</p>
+    <p><b>Task 3</b></p>
+    <p>See console for solution</p>
+
+<script>
+  /*
+  //Task 1
+  const dogs = ["Labrador", "Beagle", "Poodle", "Pug", "Chihuahua"];
+  const doggieWalks = dogs.forEach((dogName) => {
+    return "The " + dogName + " needs to go for a walk!";
+  });
+   console.log(doggieWalks);
+   */
+   //Task 2
+   const dogs = ["Labrador", "Beagle", "Poodle", "Pug", "Chihuahua"];
+  const doggieWalks = dogs.map((dogName) => {
+    return "The " + dogName + " needs to go for a walk!";
+  });
+   console.log(doggieWalks);
+//Task 3
+const shoutyDogNames = dogs.map((dogName) => {
+    return dogName.toUpperCase();
+  });
+   console.log(shoutyDogNames);
+</script>
+
+<p>Open the console in the browser to see the output of this script.</p>
+
+</html>
+

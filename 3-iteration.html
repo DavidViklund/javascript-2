@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <body>
+    <p><b>Iteraton</b></p>
+    <br />
+    <p><b>Task 1</b></p>
+    <p>See console for solution</p>
+   
+    <p><b>Task 2</b></p>
+    <p>See console for solution</p>
+    
+    <p><b>Task 3</b></p>
+    <p>See console for solution</p>
+   
+    <script>
+      //Task 1
+      const dogs = ["Labrador", "Beagle", "Poodle", "Pug", "Chihuahua"];
+      const printDogName = (dogName) => {
+    console.log("The " + dogName + " barks.")
+      }
+      dogs.forEach(printDogName);
+      //Task 2
+      const  printDogNameUppercase = (dogName) => {
+        const uppercaseDogName =dogName.toUpperCase();
+    console.log("The " + uppercaseDogName + " barks.")
+      }
+      dogs.forEach(printDogNameUppercase);
+
+      //Task 3
+    dogs.forEach(function(dogName){
+      console.log("The " + dogName + " needs to go for a walk!.");
+    });
+    </script>
+  </head>
+  </body>
+</html>
